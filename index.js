@@ -5,6 +5,10 @@ const { alertas, noticias } = require('./dados');
 const app = express();
 app.use(cors());
 
+app.get('/', (req, res) => {
+  res.send('API do Alerta do Tempo funcionando!');
+});
+
 app.get('/api/alertas', (req, res) => {
   const cidade = req.query.cidade;
   if (!cidade) return res.status(400).json({ error: 'Parâmetro cidade é obrigatório' });
