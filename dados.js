@@ -1,4 +1,3 @@
-// Dados de exemplo para alertas e notícias
 const alertas = {
   "São Paulo": [
     {
